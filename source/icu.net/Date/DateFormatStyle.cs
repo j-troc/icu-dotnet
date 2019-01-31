@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Icu
+{
+	public enum DateFormatStyle
+	{
+		UDAT_FULL,
+		UDAT_LONG,
+		UDAT_MEDIUM,
+		UDAT_SHORT,
+		UDAT_DEFAULT = UDAT_MEDIUM,
+		UDAT_RELATIVE = (1 << 7),
+		UDAT_FULL_RELATIVE = UDAT_FULL | UDAT_RELATIVE,
+		UDAT_LONG_RELATIVE = UDAT_LONG | UDAT_RELATIVE,
+		UDAT_MEDIUM_RELATIVE = UDAT_MEDIUM | UDAT_RELATIVE,
+		UDAT_SHORT_RELATIVE = UDAT_SHORT | UDAT_RELATIVE,
+		UDAT_NONE = -1,
+		UDAT_PATTERN = -2,
+	}
+}

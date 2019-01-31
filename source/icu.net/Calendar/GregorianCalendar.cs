@@ -29,7 +29,7 @@ namespace Icu
 			ExceptionFromErrorCode.ThrowIfError(ec);
 		}
 
-		private GregorianCalendar(SafeCalendarHandle handle)
+		internal GregorianCalendar(SafeCalendarHandle handle)
 		{
 			_calendarHandle = handle;
 		}

@@ -151,8 +151,10 @@ namespace Icu
 		}
 
 		private bool _disposingValue; // To detect redundant calls
-		protected SafeCalendarHandle _calendarHandle = default(SafeCalendarHandle);
+		internal SafeCalendarHandle _calendarHandle = default(SafeCalendarHandle);
 		protected Locale _locale;
+
+		internal SafeCalendarHandle _CalendarHandle => _calendarHandle;
 
 		
 		/// <summary>
